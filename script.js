@@ -78,8 +78,8 @@ const translations = {
     },
     bn: {
         welcomeMessage: 'ভার্চুয়াল হোয়াইটবোর্ড',
-        DrawAsYouLike: 'আপনার ইচ্ছা মত আঁকো:',
-        MadeBy: ' অগ্নিভ মাইতি দ্বারা বানানো'
+        DrawAsYouLike: 'আপনার ইচ্ছে মত আঁকুন:',
+        MadeBy: ' অগ্নিভ মাইতির দ্বারা বানানো'
     },
     hi: {
         welcomeMessage: 'वर्चुअल व्हाइटबोर्ड',
