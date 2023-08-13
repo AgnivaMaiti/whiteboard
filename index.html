@@ -7,19 +7,26 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="language-dropdown">
+        <select id="languageSelector">
+            <option value="en">English</option>
+            <option value="bn">বাংলা</option>
+            <option value="hi">हिन्दी</option>
+            <option value="ur">اردو</option>
+        </select>
+    </div>
   <header>
-    <h1>Virtual Whiteboard</h1>
+    <h1 id="welcomeMessage">Virtual Whiteboard</h1>
   </header>
   <main>
     <section class="whiteboard-container">
-      <h2>Draw as you like:</h2>
+      <h2 id="DrawAsYouLike">Draw as you like:</h2>
       <canvas id="whiteboard"></canvas>
     </section>
   </main>
   <footer>
-    <p>Made by Agniva Maiti</p>
+    <p id="MadeBy">Made by Agniva Maiti</p>
   </footer>
   <script src="script.js"></script>
 </body>
 </html>
-

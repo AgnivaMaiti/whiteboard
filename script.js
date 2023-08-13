@@ -62,3 +62,43 @@ function resizeCanvas() {
 }
 
 window.addEventListener('resize', resizeCanvas);
+
+const languageSelector = document.getElementById('languageSelector');
+
+languageSelector.addEventListener('change', function() {
+    const selectedLanguage = languageSelector.value;
+    changeLanguage(selectedLanguage);
+});
+
+const translations = {
+    en: {
+        welcomeMessage: 'Virtual Whiteboard',
+        DrawAsYouLike: 'Draw as you like:',
+        MadeBy: 'Made by Agniva Maiti'
+    },
+    bn: {
+        welcomeMessage: 'ভার্চুয়াল হোয়াইটবোর্ড',
+        DrawAsYouLike: 'আপনার ইচ্ছা মত আঁকো:',
+        MadeBy: ' অগ্নিভ মাইতি দ্বারা বানানো'
+    },
+    hi: {
+        welcomeMessage: 'वर्चुअल व्हाइटबोर्ड',
+        DrawAsYouLike: 'जैसा चाहो वैसा चित्र बनाओ:',
+        MadeBy: 'अग्निभ माइति द्वारा बनाया गया'
+    },
+    ur: {
+        welcomeMessage: 'ورچوئل وائٹ بورڈ',
+        DrawAsYouLike: ':اپنی مرضی کے مطابق تصویر بنائیں',
+        MadeBy: ' اگنیبھ مایتی کا بنایا ہوا'
+    }
+};
+
+function changeLanguage(language) {
+    const translation = translations[language];
+    document.getElementById('welcomeMessage').textContent = translation.welcomeMessage;
+    document.getElementById('DrawAsYouLike').textContent = translation.DrawAsYouLike;
+    document.getElementById('MadeBy').textContent = translation.MadeBy;
+
+}
+
+changeLanguage('en'); 

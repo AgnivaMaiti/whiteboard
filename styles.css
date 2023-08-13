@@ -37,4 +37,24 @@ body {
     background-color: #333;
     color: #fff;
   }
-  
+  .language-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-dropdown select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    appearance: none; 
+    -webkit-appearance: none; 
+}
+
+.language-dropdown select:focus {
+    outline: none;
+    border-color: #007bff;
+}
